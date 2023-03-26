@@ -20,14 +20,10 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
-    implementation("org.springframework.boot:spring-boot-starter-data-redis-reactive")
-    implementation("org.springframework.boot:spring-boot-starter-jdbc")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("org.flywaydb:flyway-core")
+    implementation ("com.amazonaws:aws-java-sdk-rds:1.12.96")
+    implementation ("mysql:mysql-connector-java:8.0.31")
+    implementation ("org.springframework.boot:spring-boot-starter-data-jdbc")
+    implementation ("org.springframework.data:spring-data-jdbc")
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
